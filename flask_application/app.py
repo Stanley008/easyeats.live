@@ -28,7 +28,7 @@ def home():
         location_option_query = location_option(cuisines_option_query, chosen_filters)
 
         cursor.execute(additional_options(location_option_query, chosen_filters))
-        data = cur.fetchall()
+        data = cursor.fetchall()
 
     new_data = []
     for i in data:
